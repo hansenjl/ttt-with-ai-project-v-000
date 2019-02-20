@@ -46,7 +46,9 @@ class Game
     input = current_player.move(@board)
     if @board.valid_move?(input)
       @board.update(input, current_player)
+      puts "\n\n"
     else
+      puts "\nInvalid move"
       turn 
     end
   end 
